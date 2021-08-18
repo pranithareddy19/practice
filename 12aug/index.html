@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         Enter Your Email : <input type="text" id="email" placeholder="enter email id">
+          <button onclick="checkEmail()">Submit</button>
+
+          <script>
+          
+               function checkEmail(){
+               var email =  document.getElementById("email").value; //
+               
+                email =  email.trim();
+               email = email.toLowerCase();
+               document.getElementById("email").value = email;
+
+
+
+
+               }
+          
+
+          </script>
+
+     </body>
+</html>

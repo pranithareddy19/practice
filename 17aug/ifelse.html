@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         Password :  <input type="text" id="password">
+
+         <button onclick="validate()">Submit</button>
+
+          <script>
+          
+            function validate(){
+                var password =  document.getElementById("password").value;
+                if(password.length <8){
+                  alert("the password should not be less than 8 chars");
+                }
+                else{
+                    alert("password saved successfully!");
+                }
+            }
+          
+          </script>
+
+     </body>
+</html>

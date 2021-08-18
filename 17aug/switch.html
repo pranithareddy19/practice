@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+          <select id="car" onchange="carSelector()">
+             <option value="">Selact Your Car</option>
+             <option value="creta">Creta</option>
+             <option value="eco">EcoSport</option>
+             <option value="polo">Polo</option>
+             <option value="nexon">Nexon</option>
+          </select>
+
+           <img  id="image">
+
+          <script>
+          
+          carSelector();
+             function carSelector(){
+
+              var car =  document.getElementById("car").value;
+              var img  = document.getElementById("image");
+               
+              switch(car){
+                  case  "creta" : img.src="../../creta.jpg"; break;
+                  case  "ecosport" :  img.src="../../eco.jpg"; break; 
+                  case  "polo" :   img.src="../../polo.jpg"; break;
+                  case  "nexon" :   img.src="../../nexon.jpg"; break; 
+                  default : alert("select some car");
+              }
+
+             }
+                
+          
+          </script>
+          
+          
+     </body>
+</html>
